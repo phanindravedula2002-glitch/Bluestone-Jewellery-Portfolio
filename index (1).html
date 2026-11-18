@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phanindra Vedula · Element 79 · A content idea for BlueStone</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f2;--fg:#14213d;--mut:#5b6478;--card:#fff;--line:#e4ddd0;--gold:#a87405;--hero:#0e1424;--herofg:#f1ede4;--g2:#e0b84a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0f1c;--fg:#f1ede4;--mut:#a3abbd;--card:#141b30;--line:#2a3354;--gold:#e0b84a}}
+:root[data-theme="dark"]{--bg:#0a0f1c;--fg:#f1ede4;--mut:#a3abbd;--card:#141b30;--line:#2a3354;--gold:#e0b84a}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;margin:0}
+.w{max-width:900px;margin:0 auto;padding:0 20px}
+.hero{background:var(--hero);color:var(--herofg);padding:56px 0 64px;background-image:radial-gradient(circle at 80% 20%,#24305a 0,transparent 55%)}
+.hero .w{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center}
+@media(max-width:700px){.hero .w{grid-template-columns:1fr}}
+.eyebrow{color:var(--g2);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+h1{font-size:clamp(34px,6vw,54px);font-weight:800;margin:12px 0 16px}
+h1 em{font-style:normal;color:var(--g2)}
+.hero p{color:#c9cfdf;font-size:18px;max-width:520px;margin:0}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.btn{padding:11px 20px;border-radius:999px;border:1px solid var(--g2);color:var(--g2);text-decoration:none;font-weight:600;font-size:14px;cursor:pointer;background:none;font-family:inherit}
+.btn.p{background:var(--g2);color:#0e1424}
+.tile{justify-self:center;width:210px;height:250px;border:3px solid var(--g2);border-radius:14px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;color:var(--g2);transform:rotate(-3deg);box-shadow:0 20px 50px #0008;animation:fl 5s ease-in-out infinite;background:#0b1121}
+@keyframes fl{50%{transform:rotate(2deg) translateY(-8px)}}
+.tile b{font-family:Fraunces,serif;font-size:92px;line-height:1;font-weight:800;text-align:center}
+.tile div{display:flex;justify-content:space-between;font-size:14px;font-weight:600}
+.tile span{text-align:center;font-family:Fraunces,serif;font-size:22px}
+section{padding:46px 0}
+.k{color:var(--gold);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+h2{font-size:clamp(26px,4.5vw,36px);font-weight:800;margin:8px 0 8px}
+.sub{color:var(--mut);margin:0 0 22px;max-width:620px}
+.sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{font-size:18px;margin-bottom:6px}.card p{margin:0;color:var(--mut);font-size:15px}
+.num{font-family:Fraunces,serif;color:var(--gold);font-size:30px;font-weight:800}
+.flip{perspective:900px;height:210px;cursor:pointer;border:0;background:none;padding:0;text-align:left;font:inherit;color:inherit}
+.in{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.f,.b{position:absolute;inset:0;backface-visibility:hidden;border-radius:16px;padding:18px;display:flex;flex-direction:column;justify-content:space-between}
+.f{background:var(--hero);color:var(--herofg);border:1px solid var(--g2)}
+.f h3{font-size:22px;color:var(--herofg)}.f small,.b small{color:var(--g2);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.b{background:var(--card);border:1px solid var(--gold);transform:rotateY(180deg);font-size:14.5px}
+.b p{margin:6px 0;color:var(--fg)}.b i{color:var(--gold);font-style:normal;font-weight:600}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.sb{display:grid;grid-template-columns:230px 1fr;gap:26px;align-items:center}
+@media(max-width:640px){.sb{grid-template-columns:1fr;justify-items:center}}
+.phone{width:210px;height:370px;border-radius:26px;border:6px solid var(--fg);background:var(--hero);color:var(--herofg);padding:18px 14px;display:flex;flex-direction:column;justify-content:space-between;text-align:center}
+.phone .t{color:var(--g2);font-size:12px;font-weight:600}
+.phone .c{font-family:Fraunces,serif;font-size:21px;font-weight:700}
+.phone .s{font-size:12px;color:#aab3cc}
+.steps{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.pane{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;min-height:170px}
+.pane h3{margin-bottom:8px}.pane p{margin:6px 0;color:var(--mut)}
+.mock{margin-top:12px;border-radius:12px;background:var(--hero);color:var(--g2);font-family:Fraunces,serif;font-weight:800;text-align:center;padding:18px 10px;font-size:clamp(20px,4vw,30px)}
+.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;counter-reset:s}
+.tl .card{position:relative;padding-left:58px}
+.tl .card:before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;font-weight:700;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;text-align:center}
+.stats .card{padding:16px 10px}.stats .num{font-size:34px}.stats p{font-size:13px}
+.pill{display:inline-block;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--mut);margin:3px 3px 0 0}
+.rv{opacity:0;transform:translateY(18px);transition:.6s}.rv.in2{opacity:1;transform:none}
+.cta{background:var(--hero);color:var(--herofg);text-align:center;padding:56px 20px}
+.cta h2{color:var(--herofg)}.cta p{color:#c9cfdf}
+@media(prefers-reduced-motion:reduce){.tile{animation:none}.rv{opacity:1;transform:none}}
+</style></head><body>
+
+<header class="hero"><div class="w">
+ <div>
+  <div class="eyebrow">An idea for BlueStone · Content Generalist application</div>
+  <h1>Gold is <em>element 79</em>. Let’s make people fall for the science behind the shine.</h1>
+  <p>I’m Phanindra, a chemical engineer with no reel archive and one clear idea. This page is my pitch, built the way I’d build your content: hook first, one idea, easy to share.</p>
+  <div class="btns"><a class="btn p" href="#facts">Tap a fact ↓</a><a class="btn" href="#me">Who am I?</a></div>
+ </div>
+ <div class="tile" aria-hidden="true"><div><span style="font-size:15px">79</span><span style="font-size:13px">196.97</span></div><b>Au</b><span>Gold</span></div>
+</div></header>
+
+<section><div class="w rv">
+ <div class="k">The 10-second version</div>
+ <h2>What you’re getting</h2>
+ <div class="sum">
+  <div class="card"><div class="num">1</div><h3>A series idea</h3><p>“Element 79”: short jewellery-science films that build trust and are easy to share.</p></div>
+  <div class="card"><div class="num">2</div><h3>A shoot plan</h3><p>A ready shot list and a method for running the day, from brief to final cut.</p></div>
+  <div class="card"><div class="num">3</div><h3>A person who ships</h3><p>Organiser, presenter, published co-author. I plan, explain and deliver under deadlines.</p></div>
+ </div>
+</div></section>
+
+<section id="facts"><div class="w rv">
+ <div class="k">The series, in four cards</div>
+ <h2>Tap a card. That’s the content.</h2>
+ <p class="sub">Each card is one episode: a hook on the front, the fact on the back, and the BlueStone angle. Each would run 15–30 seconds as a reel.</p>
+ <div class="facts">
+  <button class="flip"><div class="in"><div class="f"><small>Episode 1</small><h3>Why does real gold never tarnish?</h3><small>Tap to flip</small></div><div class="b"><div><small style="color:var(--gold)">The fact</small><p>Gold barely reacts with air or water, so it doesn’t rust or tarnish like silver or copper.</p></div><p><i>BlueStone angle:</i> a gold piece can be passed down for generations.</p></div></div></button>
+  <button class="flip"><div class="in"><div class="f"><small>Episode 2</small><h3>What does “18K” actually mean?</h3><small>Tap to flip</small></div><div class="b"><div><small style="color:var(--gold)">The fact</small><p>24K is pure gold. 18K is 75% gold and 22K is about 91.6%, with other metals added for strength.</p></div><p><i>BlueStone angle:</i> an easy purity guide for first-time buyers.</p></div></div></button>
+  <button class="flip"><div class="in"><div class="f"><small>Episode 3</small><h3>Diamond and pencil lead: same element?</h3><small>Tap to flip</small></div><div class="b"><div><small style="color:var(--gold)">The fact</small><p>Both are carbon. Diamond’s atoms are locked in a rigid 3D lattice, which makes it the hardest natural material.</p></div><p><i>BlueStone angle:</i> a diamond is pressure and structure made beautiful.</p></div></div></button>
+  <button class="flip"><div class="in"><div class="f"><small>Episode 4</small><h3>How thin can gold get?</h3><small>Tap to flip</small></div><div class="b"><div><small style="color:var(--gold)">The fact</small><p>Gold is so malleable that a single gram can be beaten into a sheet of roughly one square metre.</p></div><p><i>BlueStone angle:</i> that’s why fine detail is possible in design.</p></div></div></button>
+ </div>
+</div></section>
+
+<section style="background:var(--card)"><div class="w rv">
+ <div class="k">Sample reel</div>
+ <h2>Episode 1 in 20 seconds</h2>
+ <p class="sub">Tap through the storyboard for “Why real gold never tarnishes.”</p>
+ <div class="sb">
+  <div class="phone"><div class="t" id="pt">0–2s</div><div class="c" id="pc">“One of these will look new in 100 years.”</div><div class="s" id="ps">Macro: tarnished silver spoon next to a gold ring</div></div>
+  <div>
+   <div class="steps" id="st"></div>
+   <p style="color:var(--mut);margin:0">Why this works: the hook is a visual contrast in the first 2 seconds, there is one idea per shot, and it ends on the brand.</p>
+  </div>
+ </div>
+</div></section>
+
+<section><div class="w rv">
+ <div class="k">One idea, every format</div>
+ <h2>How “Element 79” travels</h2>
+ <div class="steps" id="tabs"></div>
+ <div class="pane" id="pane"></div>
+</div></section>
+
+<section style="background:var(--card)"><div class="w rv">
+ <div class="k">Running the shoot</div>
+ <h2>Six steps from idea to cut</h2>
+ <p class="sub">I design plants for a living, and a shoot is a process with inputs, constraints and timing.</p>
+ <div class="tl">
+  <div class="card"><h3>Brief</h3><p>Goal, audience, one-line idea, deliverables per format.</p></div>
+  <div class="card"><h3>References</h3><p>Mood board plus three reels, each with a note on why it works.</p></div>
+  <div class="card"><h3>Shot list</h3><p>Shots grouped by setup and location to save time.</p></div>
+  <div class="card"><h3>Talent &amp; crew</h3><p>Model, goldsmith and crew locked early, each with a clear role.</p></div>
+  <div class="card"><h3>On set</h3><p>Keep everyone aligned to the brief, watch the clock, shoot must-haves first.</p></div>
+  <div class="card"><h3>Review</h3><p>Sharp feedback: hook in 2 seconds, one idea per shot, clear end frame.</p></div>
+ </div>
+</div></section>
+
+<section id="me"><div class="w rv">
+ <div class="k">Who’s behind this</div>
+ <h2>Not a creator yet. A fast learner who delivers.</h2>
+ <div class="stats">
+  <div class="card"><div class="num">1st</div><p>National symposium, InSCRIPT 2022</p></div>
+  <div class="card"><div class="num">4 yrs</div><p>Class Representative</p></div>
+  <div class="card"><div class="num">2</div><p>Publications as co-author</p></div>
+  <div class="card"><div class="num">9.25</div><p>CGPA, M.Tech, IIT Hyderabad</p></div>
+ </div>
+ <p style="margin-top:20px">M.Tech in Chemical Engineering at IIT Hyderabad and Placement Coordinator for my department. I organised a national-level student seminar (InChES-2024) and a technical quiz competition, and I work with Python, Aspen, ANSYS and ML. My research includes MOF catalysts and bioplastic from floral waste. Outside work: badminton, dance, cooking and music.</p>
+ <div><span class="pill">Explaining complex ideas</span><span class="pill">Event organising</span><span class="pill">Project planning</span><span class="pill">Data-led iteration</span><span class="pill">Quick learner</span></div>
+</div></section>
+
+<div class="cta"><div class="w">
+ <h2>I’d love to learn the craft with BlueStone.</h2>
+ <p>Eager to be trained, quick to learn, and full of ideas to bring to the team.</p>
+ <div class="btns" style="justify-content:center"><a class="btn p" href="mailto:ch25mtech14009@iith.ac.in">ch25mtech14009@iith.ac.in</a><a class="btn" href="tel:+918939354779">+91 89393 54779</a></div>
+</div></div>
+
+<script>
+var fr=[["0–2s","“One of these will look new in 100 years.”","Macro: tarnished silver spoon next to a gold ring"],["2–6s","“Gold is element 79. It barely reacts with air or water.”","Periodic-table tile for Au, slow push-in"],["6–12s","“That’s why it’s the metal of heirlooms.”","Hands polishing a ring on the workbench"],["12–17s","“Pure gold is soft, so jewellers alloy it. That’s the K in 18K.”","Close-up of wearer’s hand in daylight"],["17–20s","“Crafted to last. BlueStone.”","Product shot and logo"]];
+var st=document.getElementById('st');
+fr.forEach(function(f,i){var b=document.createElement('button');b.className='chip'+(i?'':' on');b.textContent=(i+1)+'. '+f[0];b.onclick=function(){[].forEach.call(st.children,function(c){c.classList.remove('on')});b.classList.add('on');document.getElementById('pt').textContent=f[0];document.getElementById('pc').textContent=f[1];document.getElementById('ps').textContent=f[2]};st.appendChild(b)});
+var fm=[["Film","60-second hero film","A goldsmith’s workbench intercut with macro shots of element 79, ending on a finished ring. Runs on YouTube and in-store screens.","The rarest element in the room."],["Social","Weekly reel series","Each reel opens with a hook such as “Why real gold never tarnishes.” Carousels explain purity and carat. Comments get answered with the next episode.","Swipe to learn the K in 18K →"],["Stills","Macro product series","Close-up product photos, each paired with a small periodic-table tile for its metal or stone.","Au · 79 · Gold"],["Print","Magazine spread","One big fact, one product, one line of copy. Plenty of white space.","One gram. One square metre."],["Out-of-home","Hoarding","A giant “79” with a single line. Designed to be read in three seconds from a moving car.","You’re wearing element 79."],["In-store","QR on the counter","Scan to watch the fact reel for the piece you’re holding, so the science becomes part of the buying moment.","Scan. Learn. Love it."]];
+var tb=document.getElementById('tabs'),pn=document.getElementById('pane');
+function show(i){[].forEach.call(tb.children,function(c,j){c.classList.toggle('on',i==j)});var f=fm[i];pn.innerHTML='<h3>'+f[1]+'</h3><p>'+f[2]+'</p><div class="mock">'+f[3]+'</div>'}
+fm.forEach(function(f,i){var b=document.createElement('button');b.className='chip';b.textContent=f[0];b.onclick=function(){show(i)};tb.appendChild(b)});show(0);
+[].forEach.call(document.querySelectorAll('.flip'),function(c){c.onclick=function(){c.classList.toggle('on')}});
+var els=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in2');io.unobserve(x.target)}})},{threshold:.08});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add('in2')})}
+</script></body></html>
